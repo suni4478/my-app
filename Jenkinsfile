@@ -8,7 +8,6 @@ pipeline{
             steps{
                 sh "mvn package"
             }
-        }
         stage("Deploy to test"){
             when {
                 branch "develop"
